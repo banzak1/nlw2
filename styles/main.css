@@ -34,7 +34,6 @@ body {
 }
 
 body {
-    height: 100vh;
     background: var(--color-background);
     display: flex;
     align-items: center;
