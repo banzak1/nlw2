@@ -96,5 +96,30 @@
         display: grid;
         grid-template-columns: 2fr 1fr 2fr;
         grid-template-rows: 350px 1fr;
+        grid-template-areas: 
+        "proffy image image"
+        "button button texting";
+        gap: 60px;
+    }
+
+    .logo-container {
+        grid-area: proffy;
+        text-align: initial; 
+        align-self: center;
+    }
+
+    .logo-container img {
+        height: 100%;
+    }
+
+    .hero-image {
+        grid-area: image;
+    }
+    .buttons-container {
+        grid-area: button;
+        justify-content: flex-start;
+    }
+    .total-connections {
+        grid-area: texting;
     }
 }
