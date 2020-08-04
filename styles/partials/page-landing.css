@@ -121,5 +121,6 @@
     }
     .total-connections {
         grid-area: texting;
+        justify-self: end;
     }
 }
