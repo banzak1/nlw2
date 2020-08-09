@@ -1,13 +1,11 @@
-<h1 align="center"> 
-
 <br>
     <h1 align="center">Proffy</h1>
 
-<div>
+<div align="center">
 
 <br>
 
-<img src="gif/proffy.gif" height="210" alt="demo-web" align="center">
+<img src="gif/proffy.gif" height="210" alt="demo-web" >
 
 </div>
 
