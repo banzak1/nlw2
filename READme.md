@@ -7,7 +7,7 @@
 
 <br>
 
-<img src="gif/proffy.gif" height="210" alt="demo-web">
+<img src="gif/proffy.gif" height="210" alt="demo-web" align="center">
 
 </div>
 
