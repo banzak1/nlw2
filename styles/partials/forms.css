@@ -1,12 +1,14 @@
 
 .select-block label,
-.input-block label {
+.input-block label,
+.textarea-block label {
     font-size: 1.4rem;
     color: var(--color-text-complement);
 }
 
 .input-block input,
-.select-block select {
+.select-block select,
+.textarea-block textarea {
     width: 100%;
     height: 5.6rem;
     margin-top: 0.8rem; /* margem superior */
@@ -18,13 +20,22 @@
     font: 1.6rem Archivo;
 }
 
+.textarea-block textarea {
+    padding: 1.2rem 1.6rem;
+    height: 16rem;
+
+    resize: vertical;
+}
+
 .select-block,
-.input-block  {
+.input-block,
+.textarea-block  {
     position: relative;
 }
 
 .select-block:focus-within::after,
-.input-block:focus-within::after {  /* (::after)) é um pseudoelemento que traz um dinamismo ao css */
+.input-block:focus-within::after,
+.textarea-block:focus-within::after {  /* (::after)) é um pseudoelemento que traz um dinamismo ao css */
     content:"";  /* elemento permite um efeito dinâmico */
 
     width: calc(100% - 3.2rem);    
