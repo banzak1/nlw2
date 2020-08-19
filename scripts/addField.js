@@ -1,18 +1,29 @@
-document.querySelector("#add-time")
-.addEventListener('click',cloneField)
+const addScheduleButton = document.querySelector('button#add-schedule');
 
-function cloneField() {
-    const newFieldsContainer = document.querySelector('.schedule-item').cloneNode(true)
+addScheduleButton.addEventListener('click', addNewSchedule);
 
-    const fields = newFieldsContainer.querySelectorAll('input')
+function addNewSchedule() {
+    const newSchedule = getNewEmptySchedule();
 
-    fields.forEach(function(field) {
-        field.value = ""
-    })
-
-
-
-    document.querySelector('.schedule-item').appendChild(newFieldsContainer)
+    const scheduleFieldset = document.querySelector('#schedule-items');
+    scheduleFieldset.appendChild(newSchedule);
 }
 
+function getNewEmptySchedule() {
+    const scheduleItem = document.querySelector('.schedule-item');
+    const newSchedule = getCloneWithEmptyFields(scheduleItem);
 
+    return newSchedule;
+}
+
+function getCloneWithEmptyFields(scheduleItem) {
+    const newSchedule = scheduleItem.cloneNode(true);
+
+    const weekdaySelect = newSchedule.querySelector('select');
+    weekdaySelect.selectedIndex = 0;
+
+    const timeInputs = newSchedule.querySelectorAll('input');
+    timeInputs.forEach( input => { input.value = ''; } );
+
+    return newSchedule;
+}
