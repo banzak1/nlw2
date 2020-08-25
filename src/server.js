@@ -36,13 +36,14 @@ const subjects = [
 ]
 
 const weekdays = [
+    "Domingo",
     "Segunda-Feira",
     "Terça-Feira",
     "Quarta-Feira",
     "Quinta-Feira",
     "Sexta-Feira",
     "Sábado",
-    "Domingo",
+    
 ]
 
 function pageLanding(req, res) {
