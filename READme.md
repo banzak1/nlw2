@@ -13,9 +13,9 @@
 
 Esse projeto foi realizado com as seguintes tecnologias:
 
-<img src="images/icons/html5.svg" height="16"> HTML
+<img src="public/images/icons/html5.svg" height="16"> HTML
 
-<img src="images/icons/css.svg" height="16"> CSS
+<img src="public/images/icons/css.svg" height="16"> CSS
 
 
 Feito com ❤ by Banzak  [Sigam-me](https://www.linkedin.com/in/banzak/)
