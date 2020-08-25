@@ -1,7 +1,7 @@
 const proffys = [
     { name: "Diego Rodrigues", 
     avatar:"https://avatars2.githubusercontent.com/u/2254731?s=460&amp;u=0ba16a79456c2f250e7579cb388fa18c5c2d7d65&amp;v=4", 
-    whatsapp: "75981460783", 
+    whatsapp: "75981320771", 
     bio: "Entusiasta das melhores tecnologias de química avançada.", 
     subject: "Química", 
     cost: "20", 
@@ -11,7 +11,7 @@ const proffys = [
     },
 
     { name: "Leonardo Santana", 
-    avatar:"https://avatars2.githubusercontent.com/u/2254731?s=460&amp;u=0ba16a79456c2f250e7579cb388fa18c5c2d7d65&amp;v=4", 
+    avatar:"https://avatars1.githubusercontent.com/u/17907755?s=460&u=a5319f790904b526728f90164ef06ed26cca3008&v=4", 
     whatsapp: "75981460783", 
     bio: "Entusiasta das melhores tecnologias de matemática avançada.", 
     subject: "Matematica", 
@@ -27,7 +27,7 @@ function pageLanding(req, res) {
 }
 
 function pageStudy(req, res) {
-    return res.render("study.html")
+    return res.render("study.html", { proffys })
 }
 
 function pageGiveClasses(req, res) {
