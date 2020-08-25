@@ -22,12 +22,36 @@ const proffys = [
     }
 ]
 
+const subjects = [
+        "Artes",
+        "Biologia",
+        "Ciências",
+        "Educação Física",
+        "Física",
+        "Geografia",
+        "História",
+        "Matemática",
+        "Português",
+        "Química",
+]
+
+const weekdays = [
+    "Segunda-Feira",
+    "Terça-Feira",
+    "Quarta-Feira",
+    "Quinta-Feira",
+    "Sexta-Feira",
+    "Sábado",
+    "Domingo",
+]
+
 function pageLanding(req, res) {
     return res.render("index.html")
 }
 
 function pageStudy(req, res) {
-    return res.render("study.html", { proffys })
+    const filters = req.query
+    return res.render("study.html", { proffys, filters, subjects, weekdays })
 }
 
 function pageGiveClasses(req, res) {
