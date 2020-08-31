@@ -31,6 +31,6 @@ Database.then(async (db) => {
         }
     ]
 
+    await createProffy(db, {proffyValue, classValue, classScheduleValues})
+    
 })
-
-await createProffy(db, {proffyValue, classValue, classScheduleValues})

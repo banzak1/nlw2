@@ -20,7 +20,7 @@ module.exports = async function(db, { proffyValue, classValue, classScheduleValu
         INSERT INTO classes (
             subject,
             cost,
-            proffys_id,
+            proffy_id
         ) VALUES (
             "${classValue.subject}",
             "${classValue.cost}",
@@ -33,7 +33,7 @@ module.exports = async function(db, { proffyValue, classValue, classScheduleValu
     const insertedAllClassesScheduleValues = classScheduleValues.map((classScheduleValue) => {
         return db.run(`
             INSERT INTO class_schedule (
-                class_id
+                class_id,
                 weekday,
                 time_from,
                 time_to
