@@ -2,9 +2,9 @@ const Database = require('./db')
 const createProffy = require('./createProffy')
 
 
-Database.then((db) => {
+Database.then(async (db) => {
     
-    proffy = {
+    proffyValue = {
         name: "Leonardo Santana",
         avatar: "https://avatars1.githubusercontent.com/u/17907755?s=460&u=a5319f790904b526728f90164ef06ed26cca3008&v=4",
         whatsapp: "75981460783",
@@ -18,7 +18,7 @@ Database.then((db) => {
         
     }
 
-    classScheduleValue = [
+    classScheduleValues = [
         {
         weekday: 2,
         time_from: 720,
@@ -33,4 +33,4 @@ Database.then((db) => {
 
 })
 
-//createProffy(db, {proffyValue, classValue, classScheduleValue})
+await createProffy(db, {proffyValue, classValue, classScheduleValues})
