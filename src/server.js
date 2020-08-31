@@ -96,4 +96,3 @@ server
     .get("/study", pageStudy)
     .get("/give-classes", pageGiveClasses)
     .listen(5500)
-
